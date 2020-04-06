@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Google Homepage</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <link href="Open_Sans/OpenSans-Regular.ttf" rel="stylesheet">
-        <link href="Amatic_SC/AmaticSC-Bold.ttf" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <title>Google Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="Open_Sans/OpenSans-Regular.ttf" rel="stylesheet">
+    <link href="Amatic_SC/AmaticSC-Bold.ttf" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
     <header>
-        <ul>
-           <a href="https://www.gmail.com"><li><u>Gmail</u></li></a> 
-           <a href="https://www.google.co.il/imghp?hl=en&tab=wi&authuser=0&ogbl"><li><u>Images</u></li></a>
-        </ul>
+           <a href="https://www.gmail.com" class="hdr">Gmail</a>
+           <a href="https://www.google.co.il/imghp?hl=en&tab=wi&authuser=0&ogbl" class="hdr">Images</a>
+           <a href="https://www.google.com/search?q=google+apps&oq=google+apps&aqs=chrome..69i57j35i39j0l6.3247j0j4&sourceid=chrome&ie=UTF-8" class="hdr"><img src="images/5345_-_Google_Play-512.webp" id="apps" alt="Google Apps"></a>
+           <button id="bn" type="button">Sign In</button>
     </header>
-    <main>
-    <body>
+<main>
     <a href="https://www.google.com"><img src="/Users/alexfischer/Documents/alexfischer/Coding/odin_on_rails/google-homepage/images/googlelogo_color_160x56dp.png" alt="Google Logo" class="logo"></a>
     <p>
-     <input type="text" placeholder="Search Google or type URL" size="50">
+     <input class="searchbar" type="text" placeholder="Search Google or type URL" size="50">
      <button class="btn" type="button">Search</button> <button class="btn" type="button">I'm feeling lucky</button>
     </p> 
     <br>
     <p id="lng">Goolge offered in: <a id="heb"  href="https://www.google.com/">עברית</a></p>
     </body>
-    </main>
-    <footer>
-    <ul>
-       <a href="https://ads.google.com/intl/en_il/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"><li><u>Advertising</u></li></a>
-       <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none"><li><u>Business</u></li></a>
-       <a href="https://about.google/?utm_source=google-IL&utm_medium=referral&utm_campaign=hp-footer&fg=1"><li><u>About</u></li></a>
-    </ul>
-    </footer>
+</main>
+<footer>
+    <div class="footer">
+        <div class="country">Israel</div>
+        <div class="footer-border"></div>
+        <div clas="foot">
+            <div class="left-foot">
+                <a class="ll" href="https://ads.google.com/intl/en_il/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                <a class="ll" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
+            </div>
+            <div class="right-foot">
+                <a class="rl" href="https://policies.google.com/privacy?fg=1">Privacy</a>
+                <a class="rl" href="https://policies.google.com/terms?fg=1">Terms</a>
+                <a class="rl" href="https://www.google.com/advanced_search?hl=en-IL&fg=1">Advanced Search</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
 </html>
+

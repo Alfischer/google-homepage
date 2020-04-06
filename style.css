@@ -3,30 +3,81 @@
     position: fixed;
     top: 50%;
     left: 48%;
-    margin-top: -100px;
+    margin-top: -90px;
     margin-left: -115px;
 }
 .logo:hover {
-    transform: scale(1.1);
+    transform: scaleX(1.05);
+    opacity: 95%;
 }
 header {
-  height: 40px;
-  margin: -20px;
-  padding: 0;
-  right: 0;
-  top: 0px;
-  overflow: hidden;
-  background-color: rgba(83, 78, 78, 0.781);
-  color: white;
-}
-li {
-    margin: -5px;
     display: inline;
-    padding: 4px;
-    color: white;
     float: right;
-    margin-right: 20px;
-    font-family: 'Playfair Display', serif;
+    position: relative;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: right;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 16px;
+    min-width: 220px;
+    padding-top: 5px
+}
+
+header a {
+    display: inline;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none;
+    color: rgba(2, 2, 2, .87);
+}
+.searchbar {
+    height: 30px;
+    border-radius: 25px;
+    transition: box-shadow: aliceblue: .1s;
+    width: 350px;
+    position: relative;
+    
+}
+#bn {
+    color: white;
+    display: inline-block !important;
+    background-color: darkblue;
+    outline: none;
+    border: 1px solid;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: bold;
+    background-image: linear-gradient(rgb(67, 135, 253), rgb(70, 131, 234));
+    padding-left: 10px; 
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-color: black;
+    
+}
+#bn:hover {
+    box-shadow: 0 2px 2px #cccccc;
+    transform: scaleX(1.05);
+    opacity: 95%;
+}
+#apps {
+    opacity: .80;
+    height: 25px;
+    vertical-align: middle;
+}
+#apps:hover {
+    opacity: 85%;
+    text-decoration: underline;
+    transform: scaleX(1.1);
+}
+
+.hdr {
+    padding: 2px;
+}
+.hdr:hover, .hdr:focus {
+    opacity: 85%;
+    text-decoration: underline;
 }
 main {
     position: fixed;
@@ -35,9 +86,6 @@ main {
     margin-top: 30px;
     margin-left: -90px; 
     position:absolute;
-}
-li:hover {
-    color: blue;
 }
 #heb:hover {
     color: blue;
@@ -53,16 +101,52 @@ li:hover {
     position:absolute;
 }
 footer {
-    float: left;
-    overflow: hidden;
-    background-color: rgba(83, 78, 78, 0.781);
-    color: white;
+    display: block;
     bottom: 0;
-    position: absolute;
-    height: 40px;
-    margin: 0px;
-    padding-right: 1130px;
+    height: 82px;
+    position: fixed;
+    width: 100%;
+    background: #f2f2f2;
+    border-top: 2px solid #e4e4e4;
+}
+.country {
+    margin-left: 30px;
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+    line-height: 40px;
+
 }
 
+.right-foot {
+    bottom: 0;
+    float: right;
+    padding-right: 60px;
+    color: black;
+    line-height: 40px;
 
+}
 
+.left-foot {
+    bottom: 0;
+    float: left;
+    padding-left: 20px;
+    color: black;
+    line-height: 40px;
+}
+.ll:hover, .rl:hover {
+    opacity: 85%;
+    text-decoration: underline;
+}
+.ll {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+.rl {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+.footer-border {
+    border-top: 2px solid #e4e4e4;
+}
